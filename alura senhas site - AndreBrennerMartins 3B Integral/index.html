@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="cont">
+        <div class="cont-title">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="title-ena">Gerador de senhas</h2>
+            <h3 class="title-dio">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="cont-passw">
+            <label for="passw">Senha</label>
+            <input name="passw" type="text" id="campo-passw" readonly>
+        </div>
+        <div class="parametro">
+            <h3 class="param-title">Personalize sua senha</h3>
+            <div class="param-column__passw">
+                <div class="param-passw">
+                    <h4 class="param-passw__title">Número de caracteres</h4>
+                    <div class="param-passw-butts">
+                        <button class="param-passw__butt">-</button>
+                        <p class="param-passw__txt">12</p>
+                        <button class="param-passw__butt">+</button>
+                    </div>
+                </div>
+
+                <div class="param-passw">
+                    <h4 class="param-passw__title">Características da senha</h4>
+                    <div class="param-passw-checkbox">
+                        <input name="maiuscula" type="checkbox" class="checkb" checked>
+                        <label for="maiuscula">Letras maiúsculas</label>
+                    </div>
+                    <div class="param-passw-checkbox">
+                        <input name="minuscula" type="checkbox" class="checkb">
+                        <label for="minuscula">Letras minúsculas</label>
+                    </div>
+                    <div class="param-passw-checkbox">
+                        <input name="numero" type="checkbox" class="checkb">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="param-passw-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkb">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+
+                <div class="param-passw">
+                    <h4 class="param-passw__title">Força da senha</h4>
+                    <div class="bar"></div>
+                    <div class="forca what"></div>
+                    <div class="param-passw-txt">
+                        <p>Fraca</p>
+                        <p>Media</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropy"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

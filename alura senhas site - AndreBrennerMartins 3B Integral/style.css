@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+:root{
+    --dr: white;
+    --bg: #00162E;
+    --bg-passw: #00244D;
+    --bg-txt: #001E40;
+    --borda: #0075FF;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+*{
+    font-weight: 400;
+}
+
+body{
+    color: var(--dr);
+    background-color: var(--bg);
+    font-family: var(--roboto);
+}
+
+.title-ena{
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+}
+.title-dio{
+    font-size: 24px;
+}
+
+.cont-title{
+    text-align: center;
+    margin-top: 80px;
+}
+.cont-passw{
+    margin-top: 80px;
+    background-color: var(--bg-passw);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+}
+
+#campo-passw{
+    background-color: var(--bg-passw);
+    border: none;
+    color: var(--dr);
+    font-family: var(--roboto-mono);
+    font-size: 40px;
+    width: 80%;
+}
+#campo-passw:focus{
+    outline: none;
+}
+
+.cont{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parametro{
+    background-color: var(--bg-txt);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+.param-title{
+    font-family: var(--roboto-mono);
+    font-size: 28px;
+}
+.param-passw__title{
+    font-size: 24px;
+}
+
+.param-column__passw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.param-passw{
+    width: 50%;
+    margin: 0 auto;
+}
+.param-passw-butts{
+    display: flex;
+    justify-content: center;
+}
+
+.param-passw__butt{
+    background-color: var(--bg-txt);
+    color: var(--dr);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.param-passw__txt{
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.checkb{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar{
+    background-color: var(--bg-passw);
+    height: 30px;
+    width: 100%;
+}
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+.bad{
+    width: 25%;
+    background-color: #E71B32;
+}
+.mid{
+    width: 50%;
+    background-color: #FAF408;
+}
+.gut{
+    width: 100%;
+    background-color: #00FF85;
+}
+
+.what{
+    width: 130%;
+    background-color: black;
+}
+.what::after{
+    content: "ERROR 255: password too powerful";
+    color: red;
+}
+.ultimate{
+    width: 200%;
+    background-color: white;
+}
+.ultimate::after{
+    content: "ERROR ???: Dear god";
+    color: black;
+}
+.pathetic::after{
+    content: "ERROR 404: password not found.";
+}
+
+.param-passw-txt{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 24px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .param-column__passw{
+        flex-direction: row;
+    }
+}
